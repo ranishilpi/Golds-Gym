@@ -109,8 +109,8 @@ project_fitness_app/
 
 # App runs on:
 ```bash
-    http://localhost:3000  
-    ```
+    http://localhost:3000 
+```
 
 ## **🧠 Application Workflow**
 - User opens homepage  
