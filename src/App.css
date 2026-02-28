@@ -60,7 +60,7 @@ body {
   width: 700px;
   height: 900px;
   margin-top: -330px;
-
+  z-index: -1;   /* ✅ THIS IS THE KEY FIX */
 }
 
 .exercise-card {
