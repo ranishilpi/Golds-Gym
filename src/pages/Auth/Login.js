@@ -26,38 +26,38 @@ const Login = () => {
 
   return (
     <Box sx={{ mt: { lg: '96px', xs: '60px' }, px: 2 }}>
-      <Stack maxWidth={420} mx='auto' gap={2}>
-        <Typography variant='h4' fontWeight={700}>Login</Typography>
+      <Stack maxWidth={420} mx="auto" gap={2}>
+        <Typography variant="h4" fontWeight={700}>Login</Typography>
 
-        {err ? <Typography color='error'>{err}</Typography> : null}
+        {err ? <Typography color="error">{err}</Typography> : null}
 
         <form onSubmit={onSubmit}>
           <Stack gap={2}>
             <TextField
-              label='Email'
-              type='email'
+              label="Email"
+              type="email"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
               required
             />
             <TextField
-              label='Password'
-              type='password'
+              label="Password"
+              type="password"
               value={form.password}
               onChange={(e) => setForm({ ...form, password: e.target.value })}
               required
             />
 
             <Button
-              type='submit'
-              variant='contained'
+              type="submit"
+              variant="contained"
               sx={{ bgcolor: '#FF2625', textTransform: 'none' }}
             >
               Login
             </Button>
 
             <Typography>
-              Don&apos;t have an account? <Link to='/signup'>Sign up</Link>
+              Don&apos;t have an account? <Link to="/signup">Sign up</Link>
             </Typography>
           </Stack>
         </form>
