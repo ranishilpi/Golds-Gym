@@ -20,7 +20,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm install 
 
       - name: Run tests
         run: npm test -- --watch=false
@@ -29,3 +29,4 @@ jobs:
       - name: Build project
 
         run: npm run build
+
