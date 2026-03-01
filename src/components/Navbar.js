@@ -12,26 +12,30 @@ const Navbar = () => {
     <Stack
       direction="row"
       alignItems="center"
-      sx={{ mt: { sm: '32px', xs: '20px' } }}
-      px="40px"
+      flexWrap="wrap"
+      sx={{
+        mt: { sm: '32px', xs: '16px' },
+        px: { xs: 2, sm: 3, md: '40px' },
+        gap: { xs: 1, sm: 2 },
+      }}
     >
       {/* Logo */}
       <Link to="/">
         <img
           src={Logo}
           alt="logo"
-          style={{ width: '48px', height: '48px' }}
+          style={{ width: '48px', height: '48px', minWidth: 48, minHeight: 48 }}
         />
       </Link>
 
       {/* Navigation Links */}
       <Stack
         direction="row"
-        gap="40px"
+        gap={{ xs: 2, sm: 3, md: '40px' }}
         alignItems="center"
-        sx={{ ml: '60px', flexGrow: 1 }}
+        sx={{ ml: { xs: 1, sm: 2, md: '60px' }, flexGrow: 1 }}
         fontFamily="Alegreya"
-        fontSize="22px"
+        fontSize={{ xs: '16px', sm: '18px', md: '22px' }}
       >
         <Link
           to="/"
@@ -59,15 +63,17 @@ const Navbar = () => {
 
       {/* Auth Section */}
       {!user ? (
-        <Stack direction="row" gap="16px" alignItems="center">
+        <Stack direction="row" gap={{ xs: 1, sm: 2 }} alignItems="center" flexShrink={0}>
           <Link to="/login" style={{ textDecoration: 'none' }}>
             <Button
               variant="outlined"
+              size="small"
               sx={{
                 textTransform: 'none',
                 borderColor: '#FF2625',
                 color: '#FF2625',
-                px: 3,
+                px: { xs: 2, sm: 3 },
+                fontSize: { xs: '0.8125rem', sm: '0.875rem' },
               }}
             >
               Login
@@ -77,10 +83,12 @@ const Navbar = () => {
           <Link to="/signup" style={{ textDecoration: 'none' }}>
             <Button
               variant="contained"
+              size="small"
               sx={{
                 textTransform: 'none',
                 bgcolor: '#FF2625',
-                px: 3,
+                px: { xs: 2, sm: 3 },
+                fontSize: { xs: '0.8125rem', sm: '0.875rem' },
               }}
             >
               Sign Up
@@ -88,19 +96,21 @@ const Navbar = () => {
           </Link>
         </Stack>
       ) : (
-        <Stack direction="row" gap="16px" alignItems="center">
-          <span style={{ color: '#3A1212', fontWeight: 600 }}>
+        <Stack direction="row" gap={{ xs: 1, sm: 2 }} alignItems="center" flexWrap="wrap" flexShrink={0}>
+          <span style={{ color: '#3A1212', fontWeight: 600, fontSize: 'clamp(14px, 3vw, 16px)' }}>
             Hi, {user.name}
           </span>
 
           <Button
             variant="outlined"
+            size="small"
             onClick={logout}
             sx={{
               textTransform: 'none',
               borderColor: '#FF2625',
               color: '#FF2625',
-              px: 3,
+              px: { xs: 2, sm: 3 },
+              fontSize: { xs: '0.8125rem', sm: '0.875rem' },
             }}
           >
             Logout

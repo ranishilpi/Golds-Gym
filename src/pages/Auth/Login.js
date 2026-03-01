@@ -25,8 +25,8 @@ const Login = () => {
   };
 
   return (
-    <Box sx={{ mt: { lg: '96px', xs: '60px' }, px: 2 }}>
-      <Stack maxWidth={420} mx="auto" gap={2}>
+    <Box sx={{ mt: { lg: '96px', xs: 4, sm: '60px' }, px: { xs: 2, sm: 3 } }}>
+      <Stack maxWidth={420} width="100%" mx="auto" gap={2}>
         <Typography variant="h4" fontWeight={700}>Login</Typography>
 
         {err ? <Typography color="error">{err}</Typography> : null}
