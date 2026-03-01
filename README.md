@@ -8,6 +8,28 @@
 
 ---
 
+## ** 🌍 Live Demo
+
+🔗 Live Application:
+
+https://goldsgym14.netlify.app/
+🔄 CI/CD Pipeline
+
+This project uses GitHub Actions for Continuous Integration and is automatically deployed via Netlify.
+
+✅ What Happens on Every Push:
+
+Code pushed to main
+
+GitHub Actions runs build
+
+Project is tested for build errors
+
+If successful → Automatically deployed to Netlify
+
+📂 Workflow File:
+.github/workflows/deploy.yml
+
 ## **✨ Features**
 - 🔍 Search exercises by name  
 - 🧍 Filter exercises by body parts  
