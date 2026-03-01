@@ -8,27 +8,22 @@
 
 ---
 
-## ** 🌍 Live Demo
+##  🌍 Live Demo
 
-🔗 Live Application:
-
-https://goldsgym14.netlify.app/
+- 🔗 Live Application:
+- https://goldsgym14.netlify.app/
+  
 🔄 CI/CD Pipeline
-
-This project uses GitHub Actions for Continuous Integration and is automatically deployed via Netlify.
+- This project uses GitHub Actions for Continuous Integration and is automatically deployed via Netlify.
 
 ✅ What Happens on Every Push:
-
-Code pushed to main
-
-GitHub Actions runs build
-
-Project is tested for build errors
-
-If successful → Automatically deployed to Netlify
+- Code pushed to main
+- GitHub Actions runs build
+- Project is tested for build errors
+- If successful → Automatically deployed to Netlify
 
 📂 Workflow File:
-.github/workflows/deploy.yml
+. github/workflows/react-ci.yml
 
 ## **✨ Features**
 - 🔍 Search exercises by name  
@@ -62,6 +57,8 @@ If successful → Automatically deployed to Netlify
 project_fitness_app/
 │
 ├── .github/
+|    |- workflows
+        |- react-ci.yml 
 ├── node_modules/
 ├── public/
 │
@@ -107,7 +104,7 @@ project_fitness_app/
 
 ```bash
 
-    git clone https://github.com/YOUR_USERNAME/project_fitness_app.git
+    git clone https://github.com/ranishilpi14/project_fitness_app.git
     cd project_fitness_app
 
 
@@ -121,8 +118,8 @@ project_fitness_app/
 # 3️⃣ Setup Environment Variables
 - Create .env file in root folder.
 ```bash
-    REACT_APP_EXERCISE_API_KEY=your_api_key_here
-    REACT_APP_VIDEO_API_KEY=your_api_key_here
+    REACT_APP_EXERCISE_API_KEY=
+    REACT_APP_VIDEO_API_KEY=
 ```
 # 4️⃣ Start Development Server
 ```bash
@@ -143,8 +140,7 @@ project_fitness_app/
 
 ---
 
-## **🚀 Future Enhancements**
-- User authentication  
+## **🚀 Future Enhancements** 
 - Save favorite exercises  
 - Workout plan generator  
 - AI-based workout recommendation  
