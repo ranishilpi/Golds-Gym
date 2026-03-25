@@ -85,7 +85,7 @@ project_fitness_app/
 
 ```bash
 
-    git clone https://github.com/YOUR_USERNAME/project_fitness_app.git
+    git clone https://github.com/ranishilpi14@gmail.com/project_fitness_app.git
     cd project_fitness_app
 
 
