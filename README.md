@@ -99,8 +99,8 @@ project_fitness_app/
 # 3️⃣ Setup Environment Variables
 - Create .env file in root folder.
 ```bash
-    REACT_APP_EXERCISE_API_KEY=your_api_key_here
-    REACT_APP_VIDEO_API_KEY=your_api_key_here
+    REACT_APP_RAPID_API_KEY=128dd00d3amsh97d5dba889b819bp19960cjsn4eb28369c8d4
+    REACT_APP_RAPID_API_HOST=exercisedb.p.rapidapi.com
 ```
 # 4️⃣ Start Development Server
 ```bash
